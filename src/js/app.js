@@ -7,4 +7,13 @@ window.addEventListener("DOMContentLoaded", () => {
   button.addEventListener("click", () => {
     alert("💣");
   });
+
+  const mainPage = document.querySelector(".main");
+  const boxes = document.querySelectorAll(".message");
+  mainPage.addEventListener("click", function (){
+    
+    boxes.forEach(box => {
+      box.style.display = 'inline';
+    });
+  });
 });
